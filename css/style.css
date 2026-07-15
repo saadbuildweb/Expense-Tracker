@@ -1,0 +1,55 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.main-wrapper {
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+h2 {
+  color: #2c3e50;
+}
+
+h3 {
+  color: #2c3e50;
+}
+
+.sub-text {
+  color: gray;
+  font-size: 14px;
+}
+
+/* duplicate table styling also appears inline in HTML pages AND partly repeated below */
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.expense-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* same footer rule copy-pasted again in header.css by mistake */
+.footer-box {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.cta-box {
+  text-align: center;
+  margin-top: 40px;
+}
