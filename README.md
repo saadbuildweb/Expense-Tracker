@@ -95,3 +95,5 @@ sakte hain (ya baad me React/templating seekh kar).
 5. Naming convention fix karein (#7)
 6. Semantic HTML + labels (#8, #9)
 7. Phir JavaScript shuru karein
+
+# check branch name works
