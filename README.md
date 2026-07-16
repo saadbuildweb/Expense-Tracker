@@ -26,7 +26,7 @@ kharcha-tracker/
 
 ### 1. Inline styles har jagah (sab se bada issue)
 Har HTML file me `style="..."` inline attributes hain jabke wahi styling CSS files
-me already exist karti hai. **Task:** (Done)
+me already exist karti hai. **Task:** Index.html done
 
 ### 2. Duplicate card classes (cards.css)
 `.summary-card`, `.summary-card2`, aur `.card-summary-3` teeno **exactly same** hain,
