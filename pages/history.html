@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="ur">
+
 <head>
-  <meta charset="UTF-8">
-  <title>History - Kharcha Tracker</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/buttons.css">
-  <link rel="stylesheet" href="../css/cards.css">
+    <meta charset="UTF-8">
+    <title>History - Expense Tracker</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/cards.css">
 </head>
+
 <body>
 
-  <div class="header-box" style="background-color: #2c3e50; padding: 20px; color: white;">
-    <div class="logo-text" style="font-size:24px;font-weight:bold;">Kharcha Tracker</div>
-    <div class="nav-links">
-      <a href="../index.html" class="nav-item">Home</a>
-      <a href="add-expense.html" class="nav-item">Add Kharcha</a>
-      <a href="history.html" class="nav-item">History</a>
-      <a href="about.html" class="nav-item">About</a>
-    </div>
-  </div>
-
-  <div class="main-wrapper">
-    <h1 style="text-align:center;color:#2c3e50;margin-top:30px;">Kharcha History</h1>
-
-    <div class="filter-row" style="text-align:center; margin:20px;">
-      <button class="btn1">All</button>
-      <button class="btn1">Food</button>
-      <button class="btn1">Transport</button>
-      <button class="btn1">Bills</button>
-      <button class="btn1">Shopping</button>
+    <div class="header-box">
+        <div class="logo-text">Expense Tracker</div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-item">Home</a>
+            <a href="add-expense.html" class="nav-item">Add Expense</a>
+            <a href="history.html" class="nav-item">History</a>
+            <a href="about.html" class="nav-item">About</a>
+        </div>
     </div>
 
-    <table class="expense-table" border="1" style="width:100%;border-collapse:collapse;margin-top:15px;">
-      <tr style="background:#2c3e50;color:white;">
-        <td style="padding:10px;">Date</td>
-        <td style="padding:10px;">Category</td>
-        <td style="padding:10px;">Amount</td>
-        <td style="padding:10px;">Note</td>
-        <td style="padding:10px;">Action</td>
-      </tr>
-      <tr>
-        <td style="padding:10px;">No records</td>
-        <td style="padding:10px;">-</td>
-        <td style="padding:10px;">-</td>
-        <td style="padding:10px;">-</td>
-        <td style="padding:10px;">
-          <button class="btn-danger">Delete</button>
-        </td>
-      </tr>
-    </table>
-  </div>
+    <div class="main-wrapper">
+        <h1>Expense History</h1>
 
-  <div class="footer-box" style="background-color:#2c3e50;color:white;text-align:center;padding:15px;margin-top:50px;">
-    <p>Made with love - Kharcha Tracker 2026</p>
-  </div>
+        <div class="filter-row">
+            <button class="btn1">All</button>
+            <button class="btn1">Food</button>
+            <button class="btn1">Transport</button>
+            <button class="btn1">Bills</button>
+            <button class="btn1">Shopping</button>
+        </div>
+
+        <table class="expense-table">
+            <tr style="background:#2c3e50;color:white;">
+                <td>Date</td>
+                <td>Category</td>
+                <td>Amount</td>
+                <td>Note</td>
+                <td>Action</td>
+            </tr>
+            <tr>
+                <td>No records</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>
+                    <button class="btn-danger">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer-box">
+        <p>Edited with Saad - Expense Tracker 2026</p>
+    </div>
 
 </body>
+
 </html>
