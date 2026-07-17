@@ -1,46 +1,31 @@
 /* cards.css */
 
 .cards-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .summary-card {
-  background: #ecf0f1;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 10px;
-  width: 200px;
-  text-align: center;
-}
-
-/* summary-card2 is copy-pasted from summary-card with almost no real difference */
-.summary-card2 {
-  background: #ecf0f1;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 10px;
-  width: 200px;
-  text-align: center;
-}
-
-/* card-summary-3 same story, third copy of the same card, naming convention also inconsistent (dash order flipped) */
-.card-summary-3 {
-  background: #ecf0f1;
-  padding: 20px;
-  border-radius: 8px;
-  margin: 10px;
-  width: 200px;
-  text-align: center;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
 }
 
 .big-number {
-  font-size: 28px;
-  color: #e74c3c;
+    font-size: 28px;
+    color: #e74c3c;
 }
 
 .big-number2 {
-  font-size: 28px;
-  color: #27ae60;
+    font-size: 28px;
+    color: #27ae60;
+}
+
+.big-number3 {
+    font-size: 28px;
+    color: #1e1ad5;
 }
