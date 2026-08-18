@@ -14,7 +14,9 @@ btn.onclick = () => {
 
 function RecentExpenses() {
     let raw = localStorage.getItem("expenses")
-    let expenses = raw ? JSON.parse(raw) : []
+    let expenses = raw ? JSON.parse(raw) : [];
+    let currentUser = JSON.parse(localStorage.getItem("LoggedIn"));
+    expenses = expenses.filter(exp => exp.email === currentUser.email);
     let t_body = document.querySelector("#tbody")
     if (expenses.length === 0) {
         let tr = document.createElement("tr");
@@ -35,6 +37,8 @@ function TotalExpense() {
 
     let raw = localStorage.getItem("expenses");
     let expenses = raw ? JSON.parse(raw) : []
+    let currentUser = JSON.parse(localStorage.getItem("LoggedIn"));
+    expenses = expenses.filter(exp => exp.email === currentUser.email);
     let total = 0;
     expenses.forEach(exp => {
         total += Number(exp.Amount);
@@ -45,6 +49,8 @@ function TotalExpense() {
 function MonthlyExpense() {
     let raw = localStorage.getItem("expenses");
     let expenses = raw ? JSON.parse(raw) : [];
+    let currentUser = JSON.parse(localStorage.getItem("LoggedIn"));
+    expenses = expenses.filter(exp => exp.email === currentUser.email);
     let today = new Date();
     let currentMonth = today.getMonth();
     let currentYear = today.getFullYear();
@@ -61,6 +67,8 @@ function MonthlyExpense() {
 function Entries() {
     let raw = localStorage.getItem("expenses");
     let expenses = raw ? JSON.parse(raw) : [];
+    let currentUser = JSON.parse(localStorage.getItem("LoggedIn"));
+    expenses = expenses.filter(exp => exp.email === currentUser.email);
     let length = expenses.length;
     let entries = document.querySelector("#Entries").innerHTML = length;
 

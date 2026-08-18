@@ -8,9 +8,10 @@ btn.onclick = () => {
     // console.log(amount);
     let note = document.querySelector("#Note").value;
     // console.log(note);
-
+    let currentUser = JSON.parse(localStorage.getItem("LoggedIn"));
     let expense = {
         "id": Date.now(),
+        "email": currentUser.email,
         "Date": date,
         "Category": category,
         "Amount": amount,

@@ -1,5 +1,7 @@
 let raw = localStorage.getItem("expenses")
 let expenses = raw ? JSON.parse(raw) : [];
+let currentUser = JSON.parse(localStorage.getItem("LoggedIn"));
+expenses = expenses.filter(exp => exp.email === currentUser.email);
 let t_body = document.querySelector("tbody")
 if (expenses.length === 0) {
     let tr = document.createElement("tr")
